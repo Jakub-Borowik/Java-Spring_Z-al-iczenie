@@ -1,0 +1,42 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kreator Pizzy</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+  </head>
+  <body>
+    <h1>Kreator Pizzy</h1>
+    <a th:href="@{/pizzeria/menu}" class="btn">Wróć do menu</a>
+    <hr />
+
+    <form th:action="@{/pizzeria/kreator}" th:object="${pizza}" method="post">
+      <label>Nazwij swoją pizze:</label><br />
+      <input
+        type="text"
+        th:field="*{name}"
+        placeholder="np. Ostra Bestia"
+        required
+      />
+      <br /><br />
+
+      <h3>Wybierz składniki:</h3>
+
+      <div th:each="topping : ${allToppings}">
+        <input
+          type="checkbox"
+          th:field="*{toppings}"
+          th:value="${topping.id}"
+        />
+        <label
+          th:text="${topping.name} + ' (' + ${topping.price} + ' zł)'"
+        ></label>
+      </div>
+
+      <br />
+      <button type="submit" class="btn">
+        Oblicz cenę i stwórz.
+      </button>
+    </form>
+  </body>
+</html>

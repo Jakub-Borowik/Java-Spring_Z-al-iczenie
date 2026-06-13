@@ -1,0 +1,72 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu Pizzerii</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+  </head>
+  <body>
+    <h1>Menu Pizzerii</h1>
+    <hr />
+
+    <a th:href="@{/pizzeria/kreator}" class="btn">Stwórz własną pizzę</a>
+    <a th:href="@{/pizzeria/koszyk}" class="btn" style="background-color: orange; float: right;">Twój koszyk (<span th:text="${@cart.items.size()}">0</span>)</a>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nazwa Pizzy</th>
+          <th>Cena</th>
+          <th>Składniki</th>
+          <th>Akcja</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- pętla Thymeleaf po liście obiektów z kontrolera (pizzaRepository.findAll()) -->
+        <tr th:each="pizza : ${pizzas}">
+          <!-- nazwa pizzy -->
+          <td th:text="${pizza.name}">Przykładowa Nazwa</td>
+          
+          <!-- cena bazowa -->
+          <td th:text="${pizza.basePrice} + ' zł'">0.00 zł</td>
+
+          <!-- pętla po składnikach pizzy wymieniona przecinkami -->
+          <td>
+            <span th:each="topping, stat : ${pizza.toppings}">
+              <span th:text="${topping.name}">Składnik</span
+              ><span th:if="${!stat.last}">, </span>
+            </span>
+            <span th:if="${pizza.toppings.empty}"
+              >Brak dodatkowych składników</span
+            >
+          </td>
+
+          <td>
+            <form th:action="@{/pizzeria/koszyk}" method="post">
+              <input type="hidden" name="id" th:value="${pizza.id}" />
+              <button
+                type="submit"
+                style="
+                  background-color: orange;
+                  border: none;
+                  padding: 8px 12px;
+                  border-radius: 4px;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                Do Koszyka
+              </button>
+            </form>
+          </td>
+        </tr>
+        <!-- wyświetli się to, gdy nie ma żadnych pizz w bazie -->
+        <tr th:if="${pizzas.empty}">
+          <td colspan="4" style="text-align: center">
+            Obecnie brak pizz w menu. Stwórz jakąś!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

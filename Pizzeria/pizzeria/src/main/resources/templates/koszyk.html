@@ -1,0 +1,63 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Koszyk</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+  </head>
+  <body>
+    <h1>Koszyk</h1>
+    <hr />
+
+    <a th:href="@{/pizzeria/menu}" class="btn">Wróć do menu</a>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Przedmiot</th>
+          <th>Ilość</th>
+          <th>Akcja</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="item : ${items}">
+          <td th:text="${item.pizza.name} + ' (' + ${item.pizza.basePrice} + ' zł)'">Nazwa</td>
+          
+          <td th:text="${item.quantity}">1</td>
+
+          <td>
+            <form th:action="@{/pizzeria/koszyk}" method="post">
+              <input type="hidden" name="_method" value="delete" />
+              <input type="hidden" name="id" th:value="${item.pizza.id}" />
+              <button
+                type="submit"
+                style="
+                  background-color: #ff4c4c;
+                  color: white;
+                  border: none;
+                  padding: 8px 12px;
+                  border-radius: 4px;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+              >
+                Usuń
+              </button>
+            </form>
+          </td>
+        </tr>
+        <tr th:if="${items.empty}">
+          <td colspan="3" style="text-align: center">
+            Twój koszyk jest pusty. Wróć do menu i dodaj smakowitości!
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top: 20px" th:if="${!items.empty}">
+      <form th:action="@{/pizzeria/koszyk/zamow}" method="post">
+        <button type="submit" class="btn" style="background-color: lightgreen;">Zamów</button>
+      </form>
+    </div>
+  </body>
+</html>

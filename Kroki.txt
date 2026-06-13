@@ -1,0 +1,29 @@
+1. Stworzenie spring project -> GroupId (nazwa domeny na odwrót)-> ArtificialId (nazwa samego projektu np. Pizzeria) 
+-> Version (21 najbezpieczniej) -> Jar
+
+2. Wybór dependencies: Spring Web, Thymeleaf, Spring Data JPA SQL, PostgreSQL Driver, Spring Security, Lombok
+
+3. W folderze java/GroupId/ArtificialId stwórz: Model (Klasy reprerzentujące tabele w bazie np. składniki), 
+Repository (Interfejsy do komunikacji z bazą danych,
+Service (Logika w tym algorytm), Controller (Obsługa ruchu z przeglądarki)
+
+4. Stwórz baze danych w postgreSQL (najlepiej nazwa taka sama jak ArtificialId), 
+W resources/application.properties dodaj linijki:
+spring.datasource.url=jdbc:postgresql://localhost:5432/pizzeria
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.jpa.hibernate.ddl-auto=update
+spring.sql.init.mode=always
+spring.jpa.defer-datasource-initialization=true
+spring.security.user.name=admin
+spring.security.user.password=admin
+spring.mvc.hiddenmethod.filter.enabled=true
+
+5. Set -> Nie pozwala na duplikaty, List -> Pozwala na duplikaty, .stream() -> Najlepiej działa z List.
+Stwórz Modele potrzebnych obiektów (np. dla pizzerii to toppings i pizza)
+
+6. Stworzenie repository, Muszą być intrefejsami! - one kontaktuja sie z baza danych.
+
+7. Service -> głowa aplikacji, tam robisz algorytm.
+
+8. Controller -> Przedstawianie danych na stronie, 
