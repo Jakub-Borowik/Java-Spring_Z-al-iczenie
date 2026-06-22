@@ -1,0 +1,30 @@
+1. Strefa Klienta (Wymagana rola: USER)
+showCreateTicketForm (GET):
+
+Co robi: Szykuje "czystą kartkę". Tworzy pusty obiekt zgłoszenia, wrzuca go na tacę (do Modelu) i wyświetla klientowi plik HTML z formularzem (np. pola na markę laptopa i opis usterki).
+
+submitNewTicket (POST):
+
+Co robi: Odbiera wypełniony formularz. Musi wyciągnąć login aktualnie zalogowanego klienta, przypisać tego klienta do zgłoszenia, ustawić status początkowy (np. NEW albo WAITING) i kazać serwisowi zapisać to w bazie. Na koniec przekierowuje użytkownika na listę jego zgłoszeń.
+
+showMyTickets (GET):
+
+Co robi: Wyciąga z bazy wyłączenie te zgłoszenia, które należą do zalogowanego klienta (ignoruje całą resztę). Przekazuje tę krótką listę do widoku HTML.
+
+2. Strefa Technika (Wymagana rola: TECHNICIAN lub ADMIN)
+showAllTickets (GET):
+
+Co robi: Wyciąga z bazy wszystkie zgłoszenia w systemie. Dobrą praktyką jest tutaj domyślne posortowanie ich np. od najnowszych, albo od tych, które jeszcze nie mają przypisanego technika. Przekazuje listę do HTML-a.
+
+assignTicketToMe (POST):
+
+Co robi: Reaguje na kliknięcie przycisku "Biorę to". Odbiera ID konkretnego zgłoszenia, sprawdza kto jest zalogowany (jaki technik) i przypisuje go do tego zgłoszenia. Zmienia też status (np. na IN_PROGRESS). Przekierowuje z powrotem na listę.
+
+updateTicketStatus (POST):
+
+Co robi: Odbiera z rozwijanej listy w HTML-u nowy status (np. "Gotowe do odbioru"), podmienia go w konkretnym zgłoszeniu i zapisuje w bazie, żeby klient mógł od razu zobaczyć zmianę.
+
+3. Strefa Wspólna (Wymagane samo zalogowanie)
+showTicketDetails (GET):
+
+Co robi: Wyświetla wielkie podsumowanie. To tutaj wyciągasz konkretne zgłoszenie z bazy. Co najważniejsze – to właśnie w tej metodzie wywołujesz swoje wyliczanie kosztów naprawy oraz wyliczanie szacowanego czasu (ETA), wrzucasz te dwie liczby do Modelu i wyświetlasz na eleganckiej stronie ze szczegółami.

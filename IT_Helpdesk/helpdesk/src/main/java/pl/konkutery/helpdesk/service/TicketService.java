@@ -115,6 +115,7 @@ public class TicketService {
     }
 
     // Technician
+    @Transactional
     public BigDecimal calculateTotalCost(Long ticketId) {
         Ticket ticket = ticketRepository.findById(ticketId)
                 .orElseThrow(() -> new RuntimeException("Ticket with an id:  " + ticketId + " doesn't exist."));
@@ -132,6 +133,7 @@ public class TicketService {
                 .orElse(totalCost);
     }
 
+    @Transactional
     public int calculateETA(Long technicianId) {
         List<Ticket> activeTickets = ticketRepository.findAllByTechnicianIdAndTicketStatus(technicianId,
                 TicketStatus.UNDER_REPAIRS);
@@ -142,5 +144,17 @@ public class TicketService {
                 .sum();
 
         return totalTime;
+    }
+
+    @Transactional
+    public int calculateRepairTime(Long ticketId) {
+        Ticket ticket = ticketRepository.findById(ticketId)
+                        .orElseThrow(() -> new RuntimeException("Ticket with an id:  " + ticketId + " doesn't exist."));
+        
+        int totalRepairTime = ticket.getTasks().stream()
+                .mapToInt(ServiceTask::getEstimatedTimeInMinutes)
+                .sum();
+
+                return totalRepairTime;
     }
 }

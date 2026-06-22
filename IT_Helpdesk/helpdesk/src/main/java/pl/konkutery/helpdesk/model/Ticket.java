@@ -31,6 +31,10 @@ public class Ticket {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String brand;
+
+    private String model;
+    
     private String description;
 
     @CreationTimestamp

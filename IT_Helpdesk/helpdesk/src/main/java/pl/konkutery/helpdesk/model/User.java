@@ -3,6 +3,7 @@ package pl.konkutery.helpdesk.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -27,6 +28,7 @@ public class User {
 
     private String name;
 
+    @Column(unique = true)
     private String login;
 
     private String password;

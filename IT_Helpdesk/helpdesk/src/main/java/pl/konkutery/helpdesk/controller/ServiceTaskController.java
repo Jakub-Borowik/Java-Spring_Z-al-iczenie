@@ -4,13 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.RequiredArgsConstructor;
-import pl.konkutery.helpdesk.service.TicketService;
+
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/tickets")
+@RequestMapping("/helpdesk")
 public class ServiceTaskController {
-    private final TicketService ticketService;
-
+    
     
 }

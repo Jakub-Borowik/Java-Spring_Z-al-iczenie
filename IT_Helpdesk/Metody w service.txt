@@ -1,0 +1,53 @@
+1. Panel Klienta (Podstawy)
+
+Klient musi mieć możliwość stworzenia zgłoszenia i podglądania jego ticketow.
+
+
+
+createTicket(Long clientId, String description)
+
+Co robi w środku: Znajduje Usera (klienta) po ID. Tworzy nowy obiekt Ticket, ustawia mu opis, klienta, domyślny status (np. NOWE) i robi ticketRepository.save(). Data doda się sama dzięki @CreationTimestamp!
+
+getClientTickets(Long clientId)
+
+Co robi w środku: Wywołuje z repozytorium metodę, która pobiera listę zgłoszeń należących tylko do tego jednego klienta.
+
+2. Panel Technika (Zarządzanie pracą)
+
+Tu dzieje się najwięcej, bo technik zarządza całym procesem naprawy.
+
+
+
+getNewTickets() -> (To już wymyśliłeś!) * Co robi w środku: Pobiera z bazy wszystkie tickety ze statusem NOWE.
+
+assignToMe(Long ticketId, Long technicianId) -> (Wymóg z ZPO-5)
+
+Co robi w środku: Wyciąga zgłoszenie z bazy. Ustawia pole technician na tego konkretnego pracownika. Zmienia status z NOWE na np. DIAGNOZA. Zapisuje do bazy (@UpdateTimestamp sam zaktualizuje datę!).
+
+updateStatus(Long ticketId, TicketStatus newStatus)
+
+Co robi w środku: Pozwala technikowi "przeklikać" zgłoszenie z DIAGNOZA na W_NAPRAWIE i na końcu na GOTOWE.
+
+3. Koszyk Naprawy (Magia ManyToMany)
+
+addServiceTaskToTicket(Long ticketId, Long serviceTaskId) -> (To też częściowo wymyśliłeś!)
+
+Co robi w środku: Wyciąga zgłoszenie z bazy, wyciąga usługę z cennika (ServiceTaskRepository) i robi ticket.getTasks().add(serviceTask). Następnie zapisuje zgłoszenie. To jest ten Twój "kreator naprawy".
+
+removeServiceTaskFromTicket(Long ticketId, Long serviceTaskId)
+
+Co robi w środku: Pozwala usunąć usługę, jeśli technik kliknął coś przez pomyłkę.
+
+4. Inteligentne Algorytmy (Ocena 5.0)
+
+To jest to "mięso", o którym rozmawialiśmy na początku, żeby pokazać prowadzącemu skomplikowaną logikę biznesową.
+
+
+
+calculateTotalCost(Long ticketId)
+
+Co robi w środku: Pobiera zgłoszenie, robi pętlę po wszystkich tasks w tym zgłoszeniu (Twój koszyk) i sumuje ceny. Bonus: dodaje warunek IF: jeśli suma > 500 zł, daj 10% rabatu.
+
+calculateETA(Long technicianId)
+
+Co robi w środku: Sumuje czas trwania (durationInMinutes) wszystkich trwających napraw przypisanych do tego technika i wylicza przewidywany czas odbioru.

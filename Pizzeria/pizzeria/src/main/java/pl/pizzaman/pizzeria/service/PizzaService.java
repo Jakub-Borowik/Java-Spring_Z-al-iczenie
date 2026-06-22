@@ -8,13 +8,11 @@ import lombok.RequiredArgsConstructor;
 import pl.pizzaman.pizzeria.model.Pizza;
 import pl.pizzaman.pizzeria.model.Topping;
 import pl.pizzaman.pizzeria.repository.PizzaRepository;
-import pl.pizzaman.pizzeria.repository.ToppingRepository;
 
 @Service
 @RequiredArgsConstructor
 public class PizzaService {
     private final PizzaRepository pizzaRepository;
-    private final ToppingRepository toppingRepository;
 
     public BigDecimal calculateCustomPizzaPrice(Pizza pizza) {
         return pizza.getToppings().stream()

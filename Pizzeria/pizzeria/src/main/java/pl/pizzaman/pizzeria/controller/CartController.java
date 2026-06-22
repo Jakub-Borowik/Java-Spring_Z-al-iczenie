@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.RequiredArgsConstructor;
 import pl.pizzaman.pizzeria.model.Cart;
-import pl.pizzaman.pizzeria.model.OrderItem;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 
 
@@ -31,7 +31,7 @@ public class CartController {
         return "redirect:/pizzeria/koszyk";
     }
 
-    @org.springframework.web.bind.annotation.PostMapping("/koszyk/zamow")
+    @PostMapping("/koszyk/zamow")
     public String checkout() {
         cart.clear();
         return "redirect:/pizzeria/menu";
