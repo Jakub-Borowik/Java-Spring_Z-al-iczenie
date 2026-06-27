@@ -1,0 +1,25 @@
+1. Słowa startowe (Co chcesz zrobić?)
+Zanim zaczniesz budować warunki, metoda musi wiedzieć, jaka to akcja (SELECT, COUNT, DELETE).
+
+findBy... (lub getBy..., readBy...) – Znajdź i zwróć rekordy (najczęściej używane).
+
+countBy... – Zwróć liczbę rekordów (np. countByBrand(String brand)).
+
+existsBy... – Zwróć true/false czy taki wpis jest w bazie (np. existsByLogin(String login)).
+
+deleteBy... / removeBy... – Usuń rekordy z bazy (np. deleteByAgeLessThan(18)).
+
+2. Cheat Sheet Słów Kluczowych (Budowanie warunków)
+Aby dodać filtry, po słowie findBy wpisujesz nazwę pola ze swojej klasy (używając CamelCase), a potem ewentualnie słowo kluczowe.
+
+Słowo Kluczowe,   Przykład w repozytorium,   Jak to widzi SQL?
+And / Or,    "findByBrandAndCarModel(String b, String m)",   WHERE brand = ? AND car_model = ?
+GreaterThan (Większe),   findByAgeGreaterThan(int age),   WHERE age > ?
+LessThan (Mniejsze),   findByPriceFor24hLessThan(BigDecimal price),   WHERE price_for_24h < ?
+Between (Pomiędzy),    "findByPriceFor24hBetween(BigDecimal min, BigDecimal max)",   WHERE price_for_24h BETWEEN ? AND ?
+Containing (Zawiera),   findByBrandContaining(String text),   WHERE brand LIKE '%text%'
+StartingWith (Zaczyna),   findByLoginStartingWith(String prefix),   WHERE login LIKE 'text%'
+In (Należy do zbioru),   findByRoleIn(List<UserRole> roles),   "WHERE role IN (?, ?)"
+IsNull / IsNotNull,   findByEndDateIsNull(),   WHERE end_date IS NULL
+True / False,   findByIsActiveTrue(),   WHERE is_active = true
+OrderBy...Asc/Desc,   findByBrandOrderByPriceFor24hDesc(String brand),   WHERE brand = ? ORDER BY price_for_24h DESC

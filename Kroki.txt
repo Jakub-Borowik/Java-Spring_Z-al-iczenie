@@ -22,7 +22,7 @@ spring.mvc.hiddenmethod.filter.enabled=true
 5. Set -> Nie pozwala na duplikaty, List -> Pozwala na duplikaty, .stream() -> Najlepiej działa z List.
 Stwórz Modele potrzebnych obiektów (np. dla pizzerii to toppings i pizza)
 
-6. Stworzenie repository, Muszą być intrefejsami! - one kontaktuja sie z baza danych. extends JpaRepository<CzegoToRepo, typId>
+6. Stworzenie repository, Muszą być intrefejsami! - one kontaktuja sie z baza danych. extends JpaRepository<CzegoToRepo, typId>, Dodanie własnych metod przeszukiwania w bazie danych - Optional dla jednego wyniku, List dla wielu
 
 7. Service -> głowa aplikacji, tam robisz algorytm. Na górze @RequiredArgsConstructor, @Service oraz wstrzyknięcie repository
 Do operacji zmieniających dane @Transactional (wszystkie oprócz READów).

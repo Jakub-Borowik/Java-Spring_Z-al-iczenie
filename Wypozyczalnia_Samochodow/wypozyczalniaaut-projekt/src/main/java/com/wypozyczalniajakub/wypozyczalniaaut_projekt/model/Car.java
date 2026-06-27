@@ -27,6 +27,8 @@ public class Car {
 
     private BigDecimal priceFor24h;
 
+    private boolean available = true;
+
     @OneToMany(mappedBy = "car")
     private List<Reservation> reservations;
 }
