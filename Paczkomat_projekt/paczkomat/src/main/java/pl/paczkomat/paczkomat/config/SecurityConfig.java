@@ -21,7 +21,7 @@ public class SecurityConfig {
                                                 .requestMatchers("/courier/**").hasRole("COURIER")
                                                 .requestMatchers("/lockers/free/**", "/lockers/occupy/**")
                                                 .hasRole("COURIER")
-                                                .requestMatchers("/packages", "/packages/my")
+                                                .requestMatchers("/parcels", "/parcels/my")
                                                 .hasRole("CLIENT")
                                                 .requestMatchers("/login", "/error").permitAll()
                                                 .requestMatchers("/swagger-ui.html", "/swagger-ui/**",
@@ -29,7 +29,13 @@ public class SecurityConfig {
                                                 .permitAll()
                                                 .anyRequest().authenticated())
                                 .formLogin(form -> form
-                                                .defaultSuccessUrl("/", true)
+                                                .successHandler((request, response, authentication) -> {
+                                                        boolean courier = authentication.getAuthorities().stream()
+                                                                        .anyMatch(authority -> "ROLE_COURIER"
+                                                                                        .equals(authority
+                                                                                                        .getAuthority()));
+                                                        response.sendRedirect(courier ? "/courier/lockers" : "/");
+                                                })
                                                 .permitAll())
                                 .logout(logout -> logout
                                                 .logoutSuccessUrl("/login?logout")

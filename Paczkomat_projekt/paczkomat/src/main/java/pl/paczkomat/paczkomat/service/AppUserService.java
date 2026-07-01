@@ -4,12 +4,14 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import pl.paczkomat.paczkomat.model.AppUser;
 import pl.paczkomat.paczkomat.repository.AppUserRepository;
 
 @RequiredArgsConstructor
 @Service
+@Transactional
 public class AppUserService {
     private final AppUserRepository appUserRepository;
 

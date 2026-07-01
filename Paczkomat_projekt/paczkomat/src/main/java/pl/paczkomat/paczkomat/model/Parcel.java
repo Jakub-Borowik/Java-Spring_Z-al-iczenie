@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,4 +28,8 @@ public class Parcel {
     @ManyToOne
     @JoinColumn(name = "app_user_id")
     private AppUser user;
+
+    @OneToOne
+    @JoinColumn(name = "locker_id")
+    private Locker locker;
 }

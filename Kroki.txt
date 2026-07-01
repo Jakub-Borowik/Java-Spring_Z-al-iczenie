@@ -1,4 +1,4 @@
-1. Stworzenie spring project -> GroupId (nazwa domeny na odwrót)-> ArtificialId (nazwa samego projektu np. Pizzeria) 
+pa1. Stworzenie spring project -> GroupId (nazwa domeny na odwrót)-> ArtificialId (nazwa samego projektu np. Pizzeria) 
 -> Version (21 najbezpieczniej) -> Jar
 
 2. Wybór dependencies: Spring Web, Vaadin, Spring Data JPA SQL, PostgreSQL Driver, Spring Security, Lombok
@@ -30,7 +30,7 @@ Do operacji zmieniających dane @Transactional (wszystkie oprócz READów).
 8. Controller -> Przedstawianie danych na stronie, Na górze @RequiredArgsConstructor, @Controller oraz @RequestMapping("/mainStrona").
 Dodaj Service na gore pliku.
 
-9. Do build.gradle dodaj implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.17' -aby swagger działał.
+9. Do build.gradle dodaj implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3' -aby swagger działał.
 
 OneToOne:
 Kiedy używamy: Kiedy jeden obiekt należy tylko i wyłącznie do jednego drugiego obiektu.
@@ -120,8 +120,8 @@ Logika aut, rezerwacji, dostępności, ceny.
 Algorytm ceny + test jednostkowy
 Zwyżki, zniżki, liczba dni, walidacja.
 
-Endpointy REST
-Szczególnie POST /reservations, lista aut, moje rezerwacje, admin.
+Endpoint REST
+np. POST, lub GET
 
 Swagger
 Dokumentacja endpointów.
@@ -131,3 +131,6 @@ Proste widoki: dostępne auta, rezerwacja, moje rezerwacje, panel admina.
 
 Test całości ręcznie
 Admin, klient, rezerwacja, blokada zajętych terminów.
+===================================================================
+@RequestParam = dane w URL
+@RequestBody = dane w JSON body, Przy wymogu wysyłania Posta przez JSONa, trzeba stworzyć DTO.

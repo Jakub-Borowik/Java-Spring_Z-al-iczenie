@@ -1,5 +1,6 @@
 package pl.paczkomat.paczkomat.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -23,4 +24,7 @@ public class Locker {
    private Size size;
 
    private boolean occupied;
+
+   @Column(unique = true)
+   private String code;
 }
