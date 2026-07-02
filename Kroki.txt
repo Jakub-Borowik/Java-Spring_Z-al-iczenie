@@ -136,3 +136,7 @@ Admin, klient, rezerwacja, blokada zajętych terminów.
 @RequestBody = dane w JSON body, Przy wymogu wysyłania Posta przez JSONa, trzeba stworzyć DTO.
 
 Testy: InjectMocks, tylko nad klasą, którą testuje.
+
+DTO: Minimalna ilość danych jaka ma być wyświetlona/pobrana na stronie.
+
+Dla security: Aby dostać punkty też przekopiuj securityview
