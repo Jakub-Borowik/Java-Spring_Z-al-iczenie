@@ -1,0 +1,31 @@
+package pl.transportmed.transportmed.model;
+
+import java.math.BigDecimal;
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "medical_vehicle")
+public class MedicalVehicle {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @Enumerated(EnumType.STRING)
+    private TransportType category;
+
+    private int capacity;
+
+    private int quality;
+
+    private int unitsPerHour;
+
+    private BigDecimal pricePerHour;
+
+    private boolean available;
+}

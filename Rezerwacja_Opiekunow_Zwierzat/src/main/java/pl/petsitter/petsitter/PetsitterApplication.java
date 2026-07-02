@@ -1,0 +1,11 @@
+package pl.petsitter.petsitter;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PetsitterApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(PetsitterApplication.class, args);
+    }
+}
