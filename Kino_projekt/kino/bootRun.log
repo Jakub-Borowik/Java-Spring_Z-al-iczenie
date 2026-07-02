@@ -1,0 +1,1180 @@
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>setlocal EnableExtensions 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>set DIRNAME=C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\ 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>if "C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\" == "" set DIRNAME=. 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>set APP_BASE_NAME=gradlew 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>set APP_HOME=C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\ 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>for %i in ("C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\") do set APP_HOME=%~fi 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>set APP_HOME=C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\ 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>set JAVA_EXE=java.exe 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>java.exe -version  1>NUL 2>&1 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>if 0 EQU 0 goto execute 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>endlocal   & "java.exe" "-Xmx64m" "-Xms64m"   "-Dorg.gradle.appname=gradlew" -jar "C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\\gradle\wrapper\gradle-wrapper.jar" bootRun   & call :exitWithErrorLevel 
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-02T14:44:37.104+02:00  INFO 480 --- [kino] [           main] pl.kino.kino.KinoApplication             : Starting KinoApplication using Java 25.0.2 with PID 480 (C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino\build\classes\java\main started by qbast in C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino)
+2026-07-02T14:44:37.106+02:00  INFO 480 --- [kino] [           main] pl.kino.kino.KinoApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-07-02T14:44:37.106+02:00 DEBUG 480 --- [kino] [           main] o.s.boot.SpringApplication               : Loading source class pl.kino.kino.KinoApplication
+2026-07-02T14:44:37.130+02:00 DEBUG 480 --- [kino] [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@51133c06
+2026-07-02T14:44:37.453+02:00  INFO 480 --- [kino] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T14:44:37.462+02:00 DEBUG 480 --- [kino] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'pl.kino.kino'. Automatic @Repository and @Entity scanning is enabled.
+2026-07-02T14:44:37.546+02:00  INFO 480 --- [kino] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 6 JPA repository interfaces.
+2026-07-02T14:44:37.791+02:00 DEBUG 480 --- [kino] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: C:\Users\qbast\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-web-server\4.1.0\e67513b382c2cef7b8bc364e8e85cd7f0940e331\spring-boot-web-server-4.1.0.jar
+2026-07-02T14:44:37.792+02:00 DEBUG 480 --- [kino] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: C:\Users\qbast\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-web-server\4.1.0\e67513b382c2cef7b8bc364e8e85cd7f0940e331\spring-boot-web-server-4.1.0.jar
+2026-07-02T14:44:37.792+02:00 DEBUG 480 --- [kino] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-07-02T14:44:37.803+02:00  INFO 480 --- [kino] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T14:44:37.810+02:00  INFO 480 --- [kino] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T14:44:37.810+02:00  INFO 480 --- [kino] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-02T14:44:37.847+02:00 DEBUG 480 --- [kino] [           main] b.w.c.s.WebApplicationContextInitializer : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-07-02T14:44:37.847+02:00  INFO 480 --- [kino] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 717 ms
+2026-07-02T14:44:37.866+02:00 DEBUG 480 --- [kino] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, hiddenHttpMethodFilter urls=[/*] order=-10000, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2026-07-02T14:44:37.866+02:00 DEBUG 480 --- [kino] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/], springServlet urls=[/vaadinServlet/*]
+2026-07-02T14:44:39.384+02:00  INFO 480 --- [kino] [           main] c.v.f.s.VaadinServletContextInitializer  : Search for subclasses and classes with annotations took 1384 ms
+2026-07-02T14:44:39.449+02:00  INFO 480 --- [kino] [           main] c.v.b.d.startup.DevModeStartupListener   : Starting dev-mode updaters in C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino folder.
+2026-07-02T14:44:39.469+02:00  INFO 480 --- [kino] [           main] c.v.f.s.f.s.FullDependenciesScanner      : Visited 110 classes. Took 9 ms.
+2026-07-02T14:44:39.470+02:00  INFO 480 --- [kino] [           main] c.v.f.s.frontend.BundleValidationUtil    : Checking if a development mode bundle build is needed
+2026-07-02T14:44:39.568+02:00  INFO 480 --- [kino] [           main] c.v.f.s.frontend.BundleValidationUtil    : A development mode bundle build is not needed
+2026-07-02T14:44:39.587+02:00  INFO 480 --- [kino] [in-dev-server-1] c.v.f.s.frontend.TaskCopyFrontendFiles   : Copying frontend resources from jar files ...
+2026-07-02T14:44:39.588+02:00 DEBUG 480 --- [kino] [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
+2026-07-02T14:44:39.588+02:00 DEBUG 480 --- [kino] [           main] o.s.b.s.f.OrderedHiddenHttpMethodFilter  : Filter 'hiddenHttpMethodFilter' configured for use
+2026-07-02T14:44:39.588+02:00 DEBUG 480 --- [kino] [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-07-02T14:44:39.588+02:00 DEBUG 480 --- [kino] [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2026-07-02T14:44:39.589+02:00 DEBUG 480 --- [kino] [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
+2026-07-02T14:44:39.651+02:00  INFO 480 --- [kino] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T14:44:39.655+02:00  INFO 480 --- [kino] [in-dev-server-1] c.v.f.s.frontend.TaskCopyFrontendFiles   : Visited 20 resources. Took 67 ms.
+2026-07-02T14:44:39.689+02:00  INFO 480 --- [kino] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-02T14:44:39.978+02:00  INFO 480 --- [kino] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T14:44:39.997+02:00  INFO 480 --- [kino] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T14:44:40.091+02:00  INFO 480 --- [kino] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10e4bfa5
+2026-07-02T14:44:40.092+02:00  INFO 480 --- [kino] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T14:44:40.138+02:00  INFO 480 --- [kino] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/kino]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: kino/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T14:44:40.857+02:00  INFO 480 --- [kino] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T14:44:40.905+02:00  INFO 480 --- [kino] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T14:44:40.944+02:00  INFO 480 --- [kino] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T14:44:41.081+02:00  WARN 480 --- [kino] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-02T14:44:41.129+02:00  INFO 480 --- [kino] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T14:44:41.211+02:00 DEBUG 480 --- [kino] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-07-02T14:44:41.252+02:00 DEBUG 480 --- [kino] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2026-07-02T14:44:41.271+02:00 DEBUG 480 --- [kino] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-07-02T14:44:41.293+02:00 DEBUG 480 --- [kino] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-07-02T14:44:41.369+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler mapped to context-path: /*
+2026-07-02T14:44:41.369+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler
+2026-07-02T14:44:41.390+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+2026-07-02T14:44:41.395+02:00  INFO 480 --- [kino] [           main] org.atmosphere.util.ForkJoinPool         : Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+2026-07-02T14:44:41.398+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2026-07-02T14:44:41.401+02:00  INFO 480 --- [kino] [           main] o.a.container.JSR356AsyncSupport         : JSR 356 Mapping path /VAADIN/push
+2026-07-02T14:44:41.408+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installing Default AtmosphereInterceptors
+2026-07-02T14:44:41.408+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2026-07-02T14:44:41.408+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2026-07-02T14:44:41.409+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2026-07-02T14:44:41.409+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2026-07-02T14:44:41.409+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2026-07-02T14:44:41.410+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2026-07-02T14:44:41.410+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2026-07-02T14:44:41.410+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2026-07-02T14:44:41.410+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2026-07-02T14:44:41.410+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] o.a.interceptor.HeartbeatInterceptor     : HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.411+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Broadcaster Shared List Resources: false
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Broadcaster Polling Wait Time 100
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Shared ExecutorService supported: true
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Async I/O Thread Pool Size: 200
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+2026-07-02T14:44:41.412+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2026-07-02T14:44:41.414+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Invoke AtmosphereInterceptor on WebSocket message true
+2026-07-02T14:44:41.414+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : HttpSession supported: true
+2026-07-02T14:44:41.414+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using org.atmosphere.inject.InjectableObjectFactory for dependency injection and object creation
+2026-07-02T14:44:41.414+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/11.0.22 using jakarta.servlet/3.0 and jsr356/WebSocket API
+2026-07-02T14:44:41.414+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Atmosphere Framework 3.0.5.slf4jvaadin1 started.
+2026-07-02T14:44:41.416+02:00  INFO 480 --- [kino] [           main] org.atmosphere.cpr.AtmosphereFramework   : Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+2026-07-02T14:44:41.438+02:00  INFO 480 --- [kino] [           main] c.v.f.s.DefaultDeploymentConfiguration   : 
+Vaadin is running in DEVELOPMENT mode - do not use for production deployments.
+2026-07-02T14:44:41.482+02:00  INFO 480 --- [kino] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T14:44:41.487+02:00 DEBUG 480 --- [kino] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration matched:
+      - @ConditionalOnClass found required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataJpaRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration#jdbcConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.jdbc.autoconfigure.JdbcConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceInitializationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+      - SQL InitializationDatabase Initialization spring.sql.init.mode is ALWAYS (OnSqlInitializationCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.boot.sql.autoconfigure.init.ApplicationScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   DataWebAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.PageableHandlerMethodArgumentResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataWebAutoConfiguration#pageableCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.PageableHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataWebAutoConfiguration#sortCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SortHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataWebAutoConfiguration#springDataWebSettings matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SpringDataWebSettings; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webmvc.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webmvc.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.webmvc.autoconfigure.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.web.error.whitelabel.enabled=true) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HibernateJpaAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'jakarta.persistence.EntityManager', 'org.hibernate.engine.spi.SessionImplementor' (OnClassCondition)
+
+   HibernateJpaConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.servlet.encoding.enabled=true) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConvertersCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration#jacksonJsonMapper matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration#jsonFactory matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.core.json.JsonFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration#jsonMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JsonProblemDetailsConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.ProblemDetail' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.JacksonJsonHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) found bean 'jacksonJsonMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.JacksonJsonHttpMessageConverterConfiguration#jacksonJsonHttpMessageConvertersCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.JacksonJsonHttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedJacksonJsonHttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJacksonJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcClientAutoConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate; SearchStrategy: all) found a single bean 'namedParameterJdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.simple.JdbcClient; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,jakarta.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactoryBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.jpa.EntityManagerFactoryBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#jpaVendorAdapter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.JpaVendorAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.JpaWebConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.jpa.open-in-view=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor,org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.PersistenceManagedTypesConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,jakarta.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.PersistenceManagedTypesConfiguration#persistenceManagedTypes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.persistenceunit.PersistenceManagedTypes; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JtaAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.transaction.Transaction' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.jta.enabled=true) matched (OnPropertyCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.servlet.multipart.enabled=true) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: jakarta.servlet.MultipartConfigElement; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a single bean 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnBooleanProperty (spring.persistence.exceptiontranslation.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityAutoConfiguration#authenticationEventPublisher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationEventPublisher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityFilterAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SecurityFilterAutoConfiguration#securityFilterChainRegistration matched:
+      - @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) found bean 'springSecurityFilterChain' (OnBeanCondition)
+
+   ServletWebSecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebSecurityAutoConfiguration.EnableWebSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ServletWebSecurityAutoConfiguration.PathPatternRequestMatcherBuilderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.boot.webmvc.autoconfigure.DispatcherServletPath' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.webmvc.autoconfigure.DispatcherServletPath; SearchStrategy: all) found bean 'dispatcherServletRegistration' (OnBeanCondition)
+
+   ServletWebSecurityAutoConfiguration.PathPatternRequestMatcherBuilderConfiguration#pathPatternRequestMatcherBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.web.servlet.util.matcher.PathPatternRequestMatcher$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringBootAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.boot.web.servlet.ServletContextInitializer' (OnClassCondition)
+
+   SpringBootAutoConfiguration#servletRegistrationBean matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.spring.SpringServlet; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringSecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer' (OnClassCondition)
+
+   SpringSecurityAutoConfiguration#accessAnnotationChecker matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.server.auth.AccessAnnotationChecker; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringSecurityAutoConfiguration#accessPatchChecker matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.server.auth.AccessPathChecker; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringSecurityAutoConfiguration#authenticationContext matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.spring.security.AuthenticationContext; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringSecurityAutoConfiguration#navigationAccessControlConfigurerCustomizer matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.spring.security.NavigationAccessControlConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringSecurityAutoConfiguration#vaadinAwareSecurityContextHolderStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.core.context.SecurityContextHolderStrategy; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringSecurityAutoConfiguration#vaadinRolePrefixHolder matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.spring.security.VaadinRolePrefixHolder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (TaskExecutorConfigurations.OnExecutorCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskSchedulingConfigurations.ThreadPoolTaskSchedulerBuilderConfiguration#threadPoolTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TomcatServletWebServerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.ServletRequest', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol', 'org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   TomcatServletWebServerAutoConfiguration#tomcatServletWebServerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.server.servlet.ServletWebServerFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   TomcatWebServerConfiguration matched:
+      - @ConditionalOnWarDeployment the application is not deployed as a WAR file. (OnWarDeploymentCondition)
+
+   TomcatWebServerConfiguration.TomcatWebSocketConfiguration matched:
+      - @ConditionalOnClass found required class 'org.apache.tomcat.websocket.server.WsSci' (OnClassCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a single bean 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionManagerCustomizationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionManagerCustomizationAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.transaction.autoconfigure.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   VaadinApplicationConfiguration#defaultApplicationConfigurationFactory matched:
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.server.startup.ApplicationConfigurationFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   VaadinApplicationConfiguration#springSecurityVaadinMenuAccessControl matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.core.context.SecurityContextHolder' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: com.vaadin.flow.server.auth.MenuAccessControl; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnBooleanProperty (spring.mvc.formcontent.filter.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter matched:
+      - @ConditionalOnBooleanProperty (spring.mvc.hiddenmethod.filter.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.HiddenHttpMethodFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#viewNameTranslator matched:
+      - @ConditionalOnMissingBean (names: viewNameTranslator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=false) did not find property 'spring.aop.proxy-target-class' (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   DataJpaRepositoriesAutoConfiguration#entityManagerFactoryBootstrapExecutorCustomizer:
+      Did not match:
+         - @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=deferred) did not find property 'spring.data.jpa.repositories.bootstrap-mode' (OnPropertyCondition)
+
+   DataRepositoryMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'io.micrometer.core.instrument.MeterRegistry' (OnBeanCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource spring.datasource.url is set (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceCheckpointRestoreConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.crac.Resource' (OnClassCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceHealthContributorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.health.autoconfigure.contributor.ConditionalOnEnabledHealthIndicator' (OnClassCondition)
+
+   DataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) did not find property 'spring.jmx.enabled' (OnPropertyCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourcePoolMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.TransactionManager' transactionManager (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   HibernateMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+
+   Jackson2HttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   Jackson2HttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.CborConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.cbor.CBORMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.XmlConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.JacksonXmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) did not find property 'spring.jmx.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'spring.datasource.jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JndiJtaConfiguration:
+      Did not match:
+         - @ConditionalOnJndi JNDI environment is not available (OnJndiCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.transaction.jta.JtaTransactionManager' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   KotlinSerializationHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'kotlinx.serialization.Serializable', 'kotlinx.serialization.json.Json' (OnClassCondition)
+
+   LazyConnectionDataSourceConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.connection-fetch=lazy) did not find property 'spring.datasource.connection-fetch' (OnPropertyCondition)
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' (OnClassCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.rsocket.server.RSocketServerCustomizer' (OnClassCondition)
+
+   ReactiveManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.RSocketEnabledOrReactiveWebApplication.ReactiveWebApplicationCondition did not find reactive web application classes; NestedCondition on ReactiveUserDetailsServiceAutoConfiguration.RSocketEnabledOrReactiveWebApplication.RSocketSecurityEnabledCondition @ConditionalOnBean (types: org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler; SearchStrategy: all) did not find any beans of type org.springframework.messaging.rsocket.annotation.support.RSocketMessageHandler (ReactiveUserDetailsServiceAutoConfiguration.RSocketEnabledOrReactiveWebApplication)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 3 matched 0 did not; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) matched; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) matched; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured)
+
+   ReactiveWebSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   SecurityAutoConfiguration.SecurityDataConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.data.repository.query.SecurityEvaluationContextExtension' (OnClassCondition)
+
+   ServletHttpExchangesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository' (OnBeanCondition)
+
+   ServletManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties' (OnClassCondition)
+
+   ServletMappingsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
+
+   ServletWebSecurityAutoConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   ServletWebServerConfiguration#forwardedHeaderFilter:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.application.admin.enabled=true) did not find property 'spring.application.admin.enabled' (OnPropertyCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerWrapperConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans of type org.springframework.scheduling.annotation.AsyncConfigurer (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorContextPropagationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.context.ContextSnapshot' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder' simpleAsyncTaskSchedulerBuilder (OnBeanCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TomcatMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.core.instrument.binder.tomcat.TomcatMetrics' (OnClassCondition)
+
+   TomcatReactiveManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextFactory' (OnClassCondition)
+
+   TomcatReactiveWebServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   TomcatServletManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextFactory' (OnClassCondition)
+
+   TomcatServletWebServerAutoConfiguration#tomcatForwardedHeaderFilterCustomizer:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   TomcatWebServerConfiguration#tomcatVirtualThreadsProtocolHandlerCustomizer:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.AspectJTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.aspectj.AbstractTransactionAspect; SearchStrategy: all) did not find any beans of type org.springframework.transaction.aspectj.AbstractTransactionAspect (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=false) did not find property 'spring.aop.proxy-target-class' (OnPropertyCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+         - AnyNestedCondition 3 matched 0 did not; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) matched; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) matched; NestedCondition on MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (MissingAlternativeUserDetailsManagerOrUserPropertiesConfigured)
+
+   VaadinApplicationConfiguration#vaadinMenuAccessControl:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.core.context.SecurityContextHolder' (OnClassCondition)
+
+   WebMvcAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.mvc.problemdetails.enabled=true) did not find property 'spring.mvc.problemdetails.enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarVersionLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcHealthEndpointExtensionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.health.actuate.endpoint.HealthEndpoint' (OnClassCondition)
+
+   WebMvcMappingsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
+
+   WebMvcObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.jdbc.XADataSourceWrapper; SearchStrategy: all) did not find any beans of type org.springframework.boot.jdbc.XADataSourceWrapper (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'jakarta.transaction.TransactionManager', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    com.vaadin.flow.spring.VaadinScopesConfig
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2026-07-02T14:44:41.495+02:00  INFO 480 --- [kino] [           main] pl.kino.kino.KinoApplication             : Started KinoApplication in 4.598 seconds (process running for 4.834)
+2026-07-02T14:44:41.496+02:00 DEBUG 480 --- [kino] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-07-02T14:44:41.497+02:00 DEBUG 480 --- [kino] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-07-02T14:44:41.498+02:00  INFO 480 --- [kino] [           main] c.v.b.d.DevModeHandlerManagerImpl        : Application running at http://localhost:8080/
+2026-07-02T14:44:41.513+02:00  INFO 480 --- [kino] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T14:44:41.513+02:00  INFO 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T14:44:41.513+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-07-02T14:44:41.513+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-07-02T14:44:41.513+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49f6e8a2
+2026-07-02T14:44:41.514+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@24e25991
+2026-07-02T14:44:41.514+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-07-02T14:44:41.514+02:00  INFO 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-02T14:45:37.712+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select au1_0.id,au1_0.login,au1_0.password,au1_0.role from app_user au1_0 where au1_0.login=?
+2026-07-02T14:45:37.733+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-07-02T14:45:37.735+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.804+02:00  INFO 480 --- [kino] [nio-8080-exec-2] c.vaadin.flow.server.AppShellRegistry    : There is no AppShellConfigurator implementation available, auto loading the Aura theme. Add an AppShellConfigurator to define the theme to use, e.g.
+
+import com.vaadin.flow.theme.aura.Aura;
+
+@StyleSheet(Aura.STYLESHEET)
+public class Application implements AppShellConfigurator {
+}
+
+2026-07-02T14:45:37.812+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:37.829+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/indexhtml-DWQq_pF8.js", parameters={}
+2026-07-02T14:45:37.830+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/chunk-BY_RDDpE.js", parameters={}
+2026-07-02T14:45:37.831+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.831+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.831+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/chunk-DiqZc92J-DIsalC8y.js", parameters={}
+2026-07-02T14:45:37.831+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/preload-helper-gkcH7xgb.js", parameters={}
+2026-07-02T14:45:37.831+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.832+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.832+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/consts-ChQ8OYDL-DhkR8wcv.js", parameters={}
+2026-07-02T14:45:37.832+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-eventbus-tR06exIW-BS0dgJZk.js", parameters={}
+2026-07-02T14:45:37.832+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.832+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-ui-state-DjlBBpyf-CSei8LKn.js", parameters={}
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-notification-BnxWYvla-BQnbvVrH.js", parameters={}
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/aura/aura.css", parameters={}
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-stored-machine-state-DS3t0BPl-c-XM5Wrl.js", parameters={}
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/directive-CZ105jp5-CZvL6qIl.js", parameters={}
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/early-project-state-D-4_8bD--DzCRpyPJ.js", parameters={}
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.850+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.851+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.857+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.857+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.858+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.858+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/icons-Daxdm7Mp-Bp79-GdW.js", parameters={}
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/stats-D_j8yo6z-DWPiK3r-.js", parameters={}
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-error-handler-BSf48g9y-B_8jZOZm.js", parameters={}
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/dom-utils-DF6l0-RN-Dkhlzb_n.js", parameters={}
+2026-07-02T14:45:37.860+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.860+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.860+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/section-panel-ui-state-ByeyD6ou-CLTgOGDA.js", parameters={}
+2026-07-02T14:45:37.861+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/static/push/vaadinPush.js", parameters={}
+2026-07-02T14:45:37.861+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.861+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.864+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.865+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.866+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.866+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.866+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.867+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.871+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/aura/fonts/InstrumentSans/InstrumentSans.woff2", parameters={}
+2026-07-02T14:45:37.871+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:37.875+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:37.950+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/?v-r=init&location=&query=&v-browserDetails=%7B%22v-sh%22%3A%221080%22%2C%22v-sw%22%3A%221920%22%2C%22v-wh%22%3A%22945%22%2C%22v-ww%22%3A%221920%22%2C%22v-bh%22%3A%22945%22%2C%22v-bw%22%3A%221920%22%2C%22v-curdate%22%3A%221782996337945%22%2C%22v-tzo%22%3A%22-120%22%2C%22v-dstd%22%3A%2260%22%2C%22v-rtzo%22%3A%22-60%22%2C%22v-dston%22%3A%22true%22%2C%22v-tzid%22%3A%22Europe%2FWarsaw%22%2C%22v-wn%22%3A%22v-0.07584875575818129%22%2C%22v-td%22%3A%22false%22%2C%22v-pr%22%3A%221%22%2C%22v-np%22%3A%22Win32%22%2C%22v-cs%22%3A%22%22%2C%22v-pv%22%3A%22VISIBLE%22%2C%22v-fs%22%3A%22NOT_FULLSCREEN%22%2C%22v-so%22%3A%22landscape-primary%22%2C%22v-soa%22%3A%220%22%2C%22v-tn%22%3A%22aura%22%2C%22v-ga%22%3A%22PROMPT%22%2C%22v-wla%22%3A%22SUPPORTED%22%2C%22v-ws%22%3A%22true%22%7D", parameters={masked}
+2026-07-02T14:45:37.950+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.037+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:38.040+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/FlowBootstrap-lKZYh3Et.js", parameters={}
+2026-07-02T14:45:38.040+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.045+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.531+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-global-vars-later-DyLGYM0e-CKBbLrr-.js", parameters={}
+2026-07-02T14:45:38.532+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.532+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/generated-flow-imports-DORN2gSK.js", parameters={}
+2026-07-02T14:45:38.533+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.533+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/markdown-helpers-DcVoAUNf.js", parameters={}
+2026-07-02T14:45:38.533+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.536+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.536+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.537+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-init-step2-Bfbwqsyk-L8xAs6UV.js", parameters={}
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copy-to-clipboard-B1yKQNyU-tL9Dz9Am.js", parameters={}
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/directive-helpers-DGvsMVD8-BGGaDN_N.js", parameters={}
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/lit-renderer-Ca0EZVmm-DsB6JMmc.js", parameters={}
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.544+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:38.548+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.548+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.548+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:38.549+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:39.007+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/FlowClient-CIUrWdmV.js", parameters={}
+2026-07-02T14:45:39.008+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:39.013+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:45:39.091+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:39.091+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:39.181+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.movie_title,s1_0.start_time from screening s1_0
+2026-07-02T14:45:39.186+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:45:39.217+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:39.227+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:39.227+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:39.233+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:39.605+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:39.605+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:39.607+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:41.521+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:41.522+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:41.533+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:45:41.535+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:45:41.543+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:45:41.547+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.hall_id=?
+2026-07-02T14:45:41.547+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:45:41.568+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:42.779+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:42.779+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:42.782+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:45:42.783+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:45:42.784+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.hall_id=?
+2026-07-02T14:45:42.784+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:45:42.806+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:42.815+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:42.816+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:42.817+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:45.688+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:45.688+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:45.691+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:46.808+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:46.809+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:46.811+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:47.830+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:47.830+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:47.833+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:45:47.834+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:45:47.835+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.hall_id=?
+2026-07-02T14:45:47.835+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:45:47.849+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:47.858+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:47.858+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:47.859+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:49.226+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:49.226+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:49.228+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:45:50.068+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:45:50.069+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:45:50.072+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:48:07.319+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:48:07.319+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:48:07.323+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select au1_0.id,au1_0.login,au1_0.password,au1_0.role from app_user au1_0 where au1_0.login=?
+2026-07-02T14:48:07.323+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:48:07.336+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.id in (?,?)
+2026-07-02T14:48:07.338+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:48:07.348+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : insert into reservation (payment_status,screening_id,total_price,user_id) values (?,?,?,?)
+2026-07-02T14:48:07.354+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : insert into ticket (price,reservation_id,seat_id,ticket_type) values (?,?,?,?)
+2026-07-02T14:48:07.354+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : insert into ticket (price,reservation_id,seat_id,ticket_type) values (?,?,?,?)
+2026-07-02T14:48:07.360+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:48:07.361+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:48:07.362+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select r1_0.id,r1_0.payment_status,s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time,r1_0.total_price,u1_0.id,u1_0.login,u1_0.password,u1_0.role from reservation r1_0 left join screening s1_0 on s1_0.id=r1_0.screening_id left join hall h1_0 on h1_0.id=s1_0.hall_id left join app_user u1_0 on u1_0.id=r1_0.user_id where r1_0.id=?
+2026-07-02T14:48:07.363+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.row_number,s1_0.seat_number from seat s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:48:07.364+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.row_number,s1_0.seat_number from seat s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:48:07.365+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.hall_id=?
+2026-07-02T14:48:07.365+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:48:07.375+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:48:07.386+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:48:07.386+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:48:07.387+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:48:12.319+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:48:12.319+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:48:12.323+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.movie_title,s1_0.start_time from screening s1_0
+2026-07-02T14:48:12.324+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:48:12.328+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:48:12.342+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:48:12.342+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:48:12.344+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:48:12.398+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:48:12.398+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:48:12.400+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:48:14.136+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:48:14.136+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:48:14.139+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:48:14.141+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:48:14.141+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:48:14.142+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.hall_id=?
+2026-07-02T14:48:14.142+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:48:14.152+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:49:14.143+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:49:14.143+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:49:14.145+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:39.089+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=heartbeat&v-uiId=0", parameters={masked}
+2026-07-02T14:50:39.089+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:39.090+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:44.342+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:50:44.343+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.344+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:44.361+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/screenings/4", parameters={}
+2026-07-02T14:50:44.361+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.371+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:44.374+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=0", parameters={masked}
+2026-07-02T14:50:44.374+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.375+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/VAADIN/push?v-r=push&debug_window&token=523ab7b9-af54-4f4a-8f99-8119d2b72bad&X-Atmosphere-Transport=close&X-Atmosphere-tracking-id=acfaad25-be54-47eb-92e9-9f4b3279940d", parameters={masked}
+2026-07-02T14:50:44.375+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.375+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:44.378+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:44.383+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/chunk-BY_RDDpE.js", parameters={}
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/indexhtml-DWQq_pF8.js", parameters={}
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/preload-helper-gkcH7xgb.js", parameters={}
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/chunk-DiqZc92J-DIsalC8y.js", parameters={}
+2026-07-02T14:50:44.384+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/consts-ChQ8OYDL-DhkR8wcv.js", parameters={}
+2026-07-02T14:50:44.385+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.385+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.385+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-eventbus-tR06exIW-BS0dgJZk.js", parameters={}
+2026-07-02T14:50:44.386+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.389+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.389+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.389+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.389+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.389+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/aura/aura.css", parameters={}
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-stored-machine-state-DS3t0BPl-c-XM5Wrl.js", parameters={}
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-notification-BnxWYvla-BQnbvVrH.js", parameters={}
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-ui-state-DjlBBpyf-CSei8LKn.js", parameters={}
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/directive-CZ105jp5-CZvL6qIl.js", parameters={}
+2026-07-02T14:50:44.390+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.391+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/early-project-state-D-4_8bD--DzCRpyPJ.js", parameters={}
+2026-07-02T14:50:44.391+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.395+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.396+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.396+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/icons-Daxdm7Mp-Bp79-GdW.js", parameters={}
+2026-07-02T14:50:44.396+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.396+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.396+02:00 DEBUG 480 --- [kino] [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.396+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/stats-D_j8yo6z-DWPiK3r-.js", parameters={}
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-error-handler-BSf48g9y-B_8jZOZm.js", parameters={}
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/section-panel-ui-state-ByeyD6ou-CLTgOGDA.js", parameters={}
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/dom-utils-DF6l0-RN-Dkhlzb_n.js", parameters={}
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.397+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.398+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/static/push/vaadinPush.js", parameters={}
+2026-07-02T14:50:44.398+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.401+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.403+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.403+02:00 DEBUG 480 --- [kino] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.403+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.403+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.404+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.407+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/aura/fonts/InstrumentSans/InstrumentSans.woff2", parameters={}
+2026-07-02T14:50:44.407+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.411+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.492+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/?v-r=init&location=screenings%2F4&query=&v-browserDetails=%7B%22v-sh%22%3A%221080%22%2C%22v-sw%22%3A%221920%22%2C%22v-wh%22%3A%22945%22%2C%22v-ww%22%3A%221920%22%2C%22v-bh%22%3A%22945%22%2C%22v-bw%22%3A%221920%22%2C%22v-curdate%22%3A%221782996644488%22%2C%22v-tzo%22%3A%22-120%22%2C%22v-dstd%22%3A%2260%22%2C%22v-rtzo%22%3A%22-60%22%2C%22v-dston%22%3A%22true%22%2C%22v-tzid%22%3A%22Europe%2FWarsaw%22%2C%22v-wn%22%3A%22v-0.07584875575818129%22%2C%22v-td%22%3A%22false%22%2C%22v-pr%22%3A%221%22%2C%22v-np%22%3A%22Win32%22%2C%22v-cs%22%3A%22%22%2C%22v-pv%22%3A%22VISIBLE%22%2C%22v-fs%22%3A%22NOT_FULLSCREEN%22%2C%22v-so%22%3A%22landscape-primary%22%2C%22v-soa%22%3A%220%22%2C%22v-tn%22%3A%22aura%22%2C%22v-ga%22%3A%22PROMPT%22%2C%22v-wla%22%3A%22SUPPORTED%22%2C%22v-ws%22%3A%22true%22%7D", parameters={masked}
+2026-07-02T14:50:44.493+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.495+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:44.496+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/FlowBootstrap-lKZYh3Et.js", parameters={}
+2026-07-02T14:50:44.497+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.499+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.502+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/generated-flow-imports-DORN2gSK.js", parameters={}
+2026-07-02T14:50:44.502+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/markdown-helpers-DcVoAUNf.js", parameters={}
+2026-07-02T14:50:44.502+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.502+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.504+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-global-vars-later-DyLGYM0e-CKBbLrr-.js", parameters={}
+2026-07-02T14:50:44.504+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.505+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.505+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.506+02:00 DEBUG 480 --- [kino] [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copy-to-clipboard-B1yKQNyU-tL9Dz9Am.js", parameters={}
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/copilot-init-step2-Bfbwqsyk-L8xAs6UV.js", parameters={}
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/directive-helpers-DGvsMVD8-BGGaDN_N.js", parameters={}
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/lit-renderer-Ca0EZVmm-DsB6JMmc.js", parameters={}
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.509+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.512+02:00 DEBUG 480 --- [kino] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.512+02:00 DEBUG 480 --- [kino] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.512+02:00 DEBUG 480 --- [kino] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.513+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.669+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/VAADIN/build/FlowClient-CIUrWdmV.js", parameters={}
+2026-07-02T14:50:44.670+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.673+02:00 DEBUG 480 --- [kino] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2026-07-02T14:50:44.925+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=1", parameters={masked}
+2026-07-02T14:50:44.925+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:44.928+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:50:44.930+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select s1_0.id,h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row,s1_0.movie_title,s1_0.start_time from screening s1_0 left join hall h1_0 on h1_0.id=s1_0.hall_id where s1_0.id=?
+2026-07-02T14:50:44.931+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select t1_0.id,t1_0.price,t1_0.reservation_id,t1_0.seat_id,t1_0.ticket_type from ticket t1_0 left join reservation r1_0 on r1_0.id=t1_0.reservation_id left join screening s1_0 on s1_0.id=r1_0.screening_id where s1_0.id=?
+2026-07-02T14:50:44.931+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select s1_0.id,s1_0.hall_id,s1_0.row_number,s1_0.seat_number from seat s1_0 where s1_0.hall_id=?
+2026-07-02T14:50:44.932+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] org.hibernate.SQL                        : select h1_0.id,h1_0.name,h1_0.rows_count,h1_0.seats_per_row from hall h1_0 where h1_0.id=?
+2026-07-02T14:50:44.940+02:00 DEBUG 480 --- [kino] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-07-02T14:50:50.883+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/?v-r=uidl&v-uiId=1", parameters={masked}
+2026-07-02T14:50:50.884+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-07-02T14:50:50.885+02:00 DEBUG 480 --- [kino] [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+
+> Task :bootRun FAILED
+4 actionable tasks: 2 executed, 2 up-to-date
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>"C:\WINDOWS\system32\cmd.exe" /c exit 1 
+
+C:\Users\qbast\Desktop\Zaliczenie_Java+Spring\Kino_projekt\kino>"C:\WINDOWS\system32\cmd.exe" /c exit 1 
